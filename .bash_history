@@ -1,1 +1,638 @@
-cat /home/abarca/.bash_history
+history -a
+history
+history 
+git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+./UTN-FRA_SO_Examenes/202406/script_Precondicion.sh
+source ~/.bashrc
+ls
+history
+sudo fdisk -f
+sudo fdisk -l
+sudo fdisk /dev/sdd}
+sudo fdisk /dev/sdd/
+fdisk /dev/sdd
+sudo fdisk /dev/sdd
+sudo fdisk -l
+fdisk /dev/sdc
+sudo fdisk /dev/sdc
+sudo fdisk -l
+sudo pvcreate /dev/sdc1 /dev/sdd1
+sudo vgcreate vg_datos /dev/sdd1
+sudo vgcreate vg_temp /dev/sdc1
+sudo vgs
+man lvcreate
+sudo lvcreate -L 5M vg_datos -n lv_docker
+sudo lvcreate -L 1.5G vg_datos -n lv_workareas
+sudo lvcreate -L 512M vg_temp -n lv_swap
+sudo lvs
+sudo fdisk -l
+sudo mkfs.ex4 /dev/mapper/vg_datos-lv_docker
+sudo mkfs.ext4 /dev/mapper/vg_datos-lv_docker
+sudo mkfs.ext4 /dev/mapper/vg_datos-lv_workareas
+sudo mkswap /dev/mapper/vg_temp-lv_swap
+sudo fdisk -l
+sudo mount /dev/mapper/vg_datos-lv_docker /var/lib/docker/
+df -h
+cd /
+mkdir work
+ls
+sudo mkdir work
+ls
+sudo mount /dev/mapper/vg_datos-lv_workareas /work/
+df -h
+sudo swapon /dev/mapper/vg_temp-lv_swap
+free -h
+history -a
+history
+cd /home/abarca
+cd RTA_Examen_20261123/
+history >> Punto_A.sh
+vim Punto_A.sh
+ls -l
+sudo chmod g+x Punto_A.sh Punto_B.sh Punto_C.sh Punto_D.sh
+sudo ./Punto_A.sh
+vim Punto_A.sh
+sudo ./Punto_A.sh
+cd ..
+cd /usr/local/bin/
+sudo vim Abarca_Alta_User-Groups.sh
+ls
+ls -l
+sudo chmod g+x Abarca_Alta_User-Groups.sh 
+sudo ./Abarca_Alta_User-Groups.sh abarca /home/abarca/UTN-FRA_SO_Examenes/202406/bash_script/Lista_Usuarios.txt 
+sudo vim Abarca_Alta_User-Groups.sh
+sudo ./Abarca_Alta_User-Groups.sh abarca /home/abarca/UTN-FRA_SO_Examenes/202406/bash_script/Lista_Usuarios.txt 
+sudo vim Abarca_Alta_User-Groups.sh
+cd /home/abarca/UTN-FRA_SO_Examenes/202406/
+cat Lista_Usuarios.txt
+ls
+cd bash_script/
+cat Lista_Usuarios.txt 
+cd /usr/local/bin
+sudo vim Abarca_Alta_User-Groups.sh
+sudo ./Abarca_Alta_User-Groups.sh abarca /home/abarca/UTN-FRA_SO_Examenes/202406/bash_script/Lista_Usuarios.txt 
+cp Abarca_Alta_User-Groups.sh /home/abarca/RTA_Examen_20261123/
+cd /home/abarca
+cd /usr/local/bin
+sudo vim Abarca_Alta_User-Groups.sh
+sudo ./Abarca_Alta_User-Groups.sh abarca /home/abarca/UTN-FRA_SO_Examenes/202406/bash_script/Lista_Usuarios.txt 
+sudo vim Abarca_Alta_User-Groups.sh
+sudo ./Abarca_Alta_User-Groups.sh abarca /home/abarca/UTN-FRA_SO_Examenes/202406/bash_script/Lista_Usuarios.txt 
+sudo vim Abarca_Alta_User-Groups.sh
+sudo ./Abarca_Alta_User-Groups.sh abarca /home/abarca/UTN-FRA_SO_Examenes/202406/bash_script/Lista_Usuarios.txt 
+sudo vim Abarca_Alta_User-Groups.sh
+sudo ./Abarca_Alta_User-Groups.sh abarca /home/abarca/UTN-FRA_SO_Examenes/202406/bash_script/Lista_Usuarios.txt 
+sudo vim Abarca_Alta_User-Groups.sh
+sudo ./Abarca_Alta_User-Groups.sh abarca /home/abarca/UTN-FRA_SO_Examenes/202406/bash_script/Lista_Usuarios.txt 
+cd /home/abarca
+ls
+cd /home/work
+ls
+cd /home/abarca
+sudo cat /etc/passwd
+cd RTA_Examen_20261123/
+rm Abarca_Alta_User-Groups.sh 
+cd /usr/local/bin
+ls
+cp Abarca_Alta_User-Groups.sh /home/abarca/RTA_Examen_20261123/
+history -a
+cd /home/abarca/RTA_Examen_20261123/
+history >> Punto_B.sh 
+vim Punto_B.sh
+sudo ./Punto_B.sh
+vim Punto_B.sh
+sudo ./Punto_B.sh
+cd /home/abarca/UTN-FRA_SO_Examenes/202406/docker/
+ls
+cat index.html
+sudo usermod -a -G docker abarca
+sudo apt install git
+git --help
+ls -l
+vim index.html 
+docker build -t web1-abarca:latest
+ls
+docker --help
+docker ps
+ls
+cat << EOF >> dockerfile
+FROM nginx
+COPY static-html-directory /usr/share/nginx/html
+EOF
+
+ls
+sudo su
+vim run.sh
+./run.sh
+sudo ./run.sh
+sudo chmod g+x run.sh
+sudo ./run.sh
+docker run --help
+rm dockerfile 
+ls
+docker build -t
+cat index.html 
+docker run -d -p 8080:80
+docker run -d -p 8080:80 nginx
+docker build -t lautaro2026utn/web1-Abarca
+docker build -t lautaro2026utn/web1-Abarca:latest
+cat << EOF > dockerfile
+FROM nginx
+COPY static-html-directory /usr/share/nginx/html
+EOF
+
+docker build -t lautaro2026utn/web1-abarca:latest .
+ls
+docker push lautaro2026utn/web1-abarca:latest
+docker build -t lautaro2026utn/web1-abarca:latest .
+ls
+vim run.sh
+rm dockerfile
+cd ..
+git clone https://github.com/upszot/UTN-FRA_SO_Docker.git
+cd UTN-FRA_SO_Docker/
+ls
+cd ejemplo2
+ls
+cd ..
+cd ejemplo1
+ls
+vim run.sh
+cd ..
+cd UTN-FRA_SO_Examenes/
+ls
+cd 202406
+cd docker
+ls
+vim run.sh
+ls
+vim run.sh
+sudo ./run.sh
+docker contanier
+docker contanier ls
+docker container ls
+docker ps
+cd ..
+cd UTN-FRA_SO_Docker/
+cd ejemplo_1
+ls
+cd ejemplo1
+ls
+cd share
+ls
+cd html
+cd /
+ls
+cd usr
+ls
+cd share
+ls
+cd nginx
+sudo docker run hello-world
+docker run hello-world
+cd ..
+cd /home/abarca
+docker run hello-world
+sudo apt update
+docker run hello-world
+sudo systemctl status docker
+docker run hello-world
+history -a
+docker run hello-world
+# Add Docker's official GPG key:
+sudo apt update
+sudo apt install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+# Add the repository to Apt sources:
+sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
+Types: deb
+URIs: https://download.docker.com/linux/ubuntu
+Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
+Components: stable
+Architectures: $(dpkg --print-architecture)
+Signed-By: /etc/apt/keyrings/docker.asc
+EOF
+
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo systemctl status docker
+docker run hello-world
+sudo ls -la /var/lib/docker
+service docker restart
+sudo service docker stop
+docker.socket
+docker run hello-world
+cd /home/abarca
+cd UTN-FRA_SO_Examenes/
+cd 202406
+ls
+cd docker
+ls
+sudo ./run.sh
+docker build -t lautaro2026utn/web1-abarca:latest .
+cat << EOF > dockerfile
+FROM nginx
+COPY static-html-directory /usr/share/nginx/html
+EOF
+
+docker build -t lautaro2026utn/web1-abarca:latest .
+ls
+cat dockerfile
+cd share
+ls
+cd html
+ls
+mv index.html /home/abarca/UTN-FRA_SO_Examenes/202406/docker/share/html
+cd ..
+mv index.html /home/abarca/UTN-FRA_SO_Examenes/202406/docker/share/html
+sudo mv index.html /home/abarca/UTN-FRA_SO_Examenes/202406/docker/share/html
+ls
+docker build -t lautaro2026utn/web1-abarca:latest .
+docker container
+docker container ls
+docker stop 834
+docker container ls
+ls
+cd share
+cd html
+vim index.html
+sudo ./run.sh
+cd ..
+sudo ./run.sh
+docker stop 834
+docker build -t lautaro2026utn/web1-abarca:latest .
+vim dockerfile
+s
+history
+cd home/abarca
+cd /home/abarca
+ls
+cd UTN-FRA_SO_Examenes/
+cd 202406
+cd docker
+vim dockerfile
+ls
+cd share
+cd html
+mv index.html /home/abarca/UTN-FRA_SO_Examenes/202406/docker/
+sudo mv index.html /home/abarca/UTN-FRA_SO_Examenes/202406/docker/
+cd ..
+docker build -t lautaro2026utn/web-1abarca:latest .
+mv index.html /home/abarca/UTN-FRA_SO_Examenes/202406/docker/share/html
+lsa
+ls
+cd docker
+docker build -t lautaro2026utn/web-1abarca:latest .
+vim dockerfile
+docker build -t lautaro2026utn/web-1abarca:latest .
+vim dockerfile
+docker build -t lautaro2026utn/web-1abarca:latest .
+ls
+mv index.html /home/abarca/UTN-FRA_SO_Examenes/202406/docker/share/html
+sudo mv index.html /home/abarca/UTN-FRA_SO_Examenes/202406/docker/share/html
+docker build -t lautaro2026utn/web-1abarca:latest .
+docker run -d -p 8080:80 lautaro2026utn/web-1abarca:latest .
+docker ps
+docker stop 6cf
+docker run -d -p 8080:80 lautaro2026utn/web-1abarca:latest .
+docker ps
+docker container ls
+docker run -d -p 8080:80 lautaro2026utn/web-1abarca:latest .
+la
+ls
+vim run.sh
+docker run -d -p 8080:80 lautaro2026utn/web-1abarca:latest
+history -a
+docker push lautaro2026utn/web-1abarca:latest
+docker login -u lautaro2026utn
+docker push lautaro2026utn/web-1abarca:latest
+cd ..
+cd ansible
+ls
+mkdir -p /tmp/2do_parcial/{alumno,equipo}
+ls
+cd /
+ls
+tree tmp
+apt install tree
+sudo apt install tree
+tree tmp
+cd tmp
+cd 2do_parcial/
+tree 
+tree /tmp/2do_parcial/
+cd /home/abarca/UTN-FRA_SO_Examenes/
+cd 202406
+cd ansible
+ls
+cd roles
+ls
+cd 2do_parcial/
+ls
+cd /tmp
+ls
+rm -r 2do_parcial/
+ls
+cd /home/abarca/UTN-FRA_SO_Examenes/
+cd 202406
+cd ansible
+ls
+cd roles
+ls
+cd 2do_parcial/
+ls
+cd tasks
+ls
+vim main.yml
+cd ..
+ls
+ansible --help
+sudo su
+cd roles
+ls
+cd 2do_parcial/
+ls
+cd tasks
+ls
+vim main.yml 
+cd ..
+ansible-playbook -i inventory playbook.yml
+ls
+cd roles
+ls
+2do_parcial/
+cd 2do_parcial/
+ls
+cd tests
+ls
+cd ..
+ls
+cd tasks/
+ls
+vim main.yml 
+cd ..
+ansible-playbook -i inventory playbook.yml
+cd /
+ls
+cd tmp
+ls
+cd /home/abarca/UTN-FRA_SO_Examenes/202406
+cd ansible
+ls
+cd roles
+cd tasks
+ls
+cd 2do_parcial/
+ls
+cd tasks/
+ls
+vim main.yml 
+cd ..
+ansible-playbook -i inventory playbook.yml
+ls
+cd roles
+ls
+cd 2do_parcial/
+ls
+cd handlers
+ls
+cd ..
+cd vars
+ls
+cd ..
+ls
+cd defaults/
+ls
+cd ..
+cd meta
+ls
+vim main.yml
+cd ..
+ls
+cd ..
+ls
+cd inventory/
+ls
+cd ..
+ls
+cd logs
+ls
+cd ..
+ls
+cd roles
+ls
+cd 2do_parcial/
+ls
+mkdir templates
+cd templates
+cat ..
+cd ..
+cd .
+cd ..
+cd 202311_Recu/
+ls
+cd ansible/
+ls
+cd roles
+ls
+cd multi_Pruebas/
+cd
+cd UTN-FRA_SO_Examenes/202311_Recu/ansible/roles/multi_Pruebas/
+ls
+cd templates
+ls
+cat template_01.j2 
+cd ..
+cd 202406
+cd ansible
+cd roles
+cd /home/abarca/UTN-FRA_SO_Examenes/
+history
+cd 202406
+ls
+cd ansible
+ls
+cd roles
+cd 2do_parcial/
+ls
+cd templates/
+cat << EOF > template_01.j2
+#Archivo de ejemplo template ejecutado desde ansible escrito en jinja2
+#https://jinja.palletsprojects.com/en/3.0.x
+EOF
+
+cd ..
+ls
+cd ..
+ansible-playbook -i inventory playbook.yml
+cd /tmp
+ls
+cd ..
+history
+cd tmp
+ls
+cd 2do_parcial/
+ls
+cd alumno
+ls
+cat datos_alumno.txt 
+cd ..
+cd home/abarca/UTN-FRA_SO_Examenes/202406
+ls
+cd ansible
+ls
+cd roles
+ls
+cd 2do_parcial/
+ls
+cd temp
+cd templates
+ls
+vim template_01.j2 
+cat /etc/ip
+cat ip
+cat cpu/info
+cd ..
+cd vars
+ls
+cat main.yml 
+cd ..
+cd defaults/
+cat main.yml 
+cat /etc/cpuinfo
+cat /proc/cpuinfo 
+cat /proc/cpuinfo | grep -i cpu cores
+grep -i cores /proc/cpuinfo 
+grep "cpu cores" /proc/cpuinfo | awk -F ':' '{print$2}' | tail -n1
+cd ..
+cd roles/2do_parcial/
+ls
+cd templates/
+ls
+vim template_02.j2
+ls
+vim template_02.j2
+cd ..
+cd roles
+cd tasks/
+vim main.yml 
+cd ..
+ansible-playbook -i inventory playbook.yml
+cd /tmp/2do_parcial/
+ls
+cd alumno/
+cat datos_alumno.txt 
+cd ..
+cd equipo/
+cat datos_equipo.txt 
+cd ..
+cd /home/aba
+cd /home/abarca/
+git clone https://github.com/Lauti27009/UTNFRA_SO_2do_TP_Abarca.git
+sudo apt update
+history -a
+logout
+exit
+2do_parcial/|
+sudo su abarca
+cd /home/abarca
+git clone https://github.com/Lauti27009/UTNFRA_SO_2do_TP_Abarca.git
+cd RTA_Examen_20261123/
+ls
+history
+vim Punto_C.sh
+ls
+vim Punto_C.sh
+sudo ./Punto_C.sh
+vim Punto_D.sh
+sudo ./Punto_D.sh
+cd ..
+cp RTA_Examen_20261123/ UTNFRA_SO_2do_TP_Abarca/
+cp RTA_Examen_20261123/ home/abarca/UTNFRA_SO_2do_TP_Abarca/
+man cp
+cp -r RTA_Examen_20261123/ UTNFRA_SO_2do_TP_Abarca/
+ls
+cd UTNFRA_SO_2do_TP_Abarca/
+rm -r RTA_Examen_20261123/
+ls
+cd ..
+cp -r UTN-FRA_SO_Examenes/ UTNFRA_SO_2do_TP_Abarca/
+cp -r RTA_Examen_20261123/ UTNFRA_SO_2do_TP_Abarca/
+history -a
+history > $HOME/.bash_history
+history > ..$HOME/.bash_history
+history -a > $HOME/.bash_history
+cat $HOME/.bash_history
+cat /.bash_history
+cat << FIN >> .bash_history
+cat $home/.bash_history
+FIN
+
+cat .bash_history 
+ls
+cd RTA_Examen_20261123/
+ls
+cd ..
+cd UTNFRA_SO_2do_TP_Abarca/
+ls
+cd UTN-FRA_SO_Examenes/
+ls
+cd ..
+rm -r UTN-FRA_SO_Examenes/
+ls
+cd ..
+ls
+cd UTN-FRA_SO_Examenes/
+cp -r 202406/ /home/abarca/UTNFRA_SO_2do_TP_Abarca/
+ls
+cd ..
+mv .bash_history /home/abarca/UTNFRA_SO_2do_TP_Abarca/
+ls
+cd UTNFRA_SO_2do_TP_Abarca/
+ls
+cat << EOF > .bash_history
+cat $HOME/.bash_history
+EOF
+
+ls
+cat .bash_history
+history
+history > ../.bash_history.txt
+ls
+cd ..
+ls
+ls -l
+history
+cp .bash_history > Historial_Comandos_Abarca.txt
+cp .bash_history Historial_Comandos_Abarca.txt
+ls
+cat Historial_Comandos_Abarca.txt 
+mv Historial_Comandos_Abarca.txt /home/abarca/UTNFRA_SO_2do_TP_Abarca/
+ls
+cd UTNFRA_SO_2do_TP_Abarca/
+ls
+git status
+git add .
+git commit -m "Se envio todo para el TP2 de arquitectura"
+git config --global user.email "lauti27009@gmail.com"
+git config --global user.name "lauti27009"
+git commit -m "Se envio todo para el TP2 de arquitectura"
+git push
+ls
+ls -la
+vim .bash_history 
+cat .bash_history 
+rm .bash_history
+history
+cd ..
+ls -la
+cat .bash_history
+cd UTNFRA_SO_2do_TP_Abarca/
+ls -la
+cd ..
+mv .bash_history /home/abarca/UTNFRA_SO_2do_TP_Abarca/
+ls -la
+sudo chmod 664 -bash_history
+sudo chmod 664 .bash_history
