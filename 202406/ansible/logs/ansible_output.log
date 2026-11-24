@@ -1,0 +1,162 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-11-23 20:39:03,288 p=16336 u=abarca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was
+127.0.0.1
+
+2026-11-23 20:39:03,465 p=16336 u=abarca n=ansible | PLAY [all] *****************************************************************************************
+2026-11-23 20:39:03,474 p=16336 u=abarca n=ansible | TASK [Gathering Facts] *****************************************************************************
+2026-11-23 20:39:03,573 p=16336 u=abarca n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nabarca@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2026-11-23 20:39:04,470 p=16336 u=abarca n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at
+/usr/bin/python3.10, but future installation of another Python interpreter could change the meaning
+of that path. See https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-11-23 20:39:04,470 p=16336 u=abarca n=ansible | ok: [localhost]
+2026-11-23 20:39:04,478 p=16336 u=abarca n=ansible | TASK [include_role : 2do_parcial] ******************************************************************
+2026-11-23 20:39:04,505 p=16336 u=abarca n=ansible | included: 2do_parcial for localhost
+2026-11-23 20:39:04,513 p=16336 u=abarca n=ansible | TASK [2do_parcial : debug] *************************************************************************
+2026-11-23 20:39:04,524 p=16336 u=abarca n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2026-11-23 20:39:04,532 p=16336 u=abarca n=ansible | TASK [2do_parcial : Crear directorios en /tmp/2do_parcial/] ****************************************
+2026-11-23 20:39:04,790 p=16336 u=abarca n=ansible | changed: [localhost] => (item=alumno)
+2026-11-23 20:39:04,919 p=16336 u=abarca n=ansible | changed: [localhost] => (item=equipo)
+2026-11-23 20:39:04,928 p=16336 u=abarca n=ansible | TASK [2do_parcial : Agrego archivo desde template] *************************************************
+2026-11-23 20:39:04,951 p=16336 u=abarca n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2026-11-23 20:39:04,952 p=16336 u=abarca n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Could not find or access 'template_01.j2'\nSearched in:\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/templates/template_01.j2\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/template_01.j2\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/templates/template_01.j2\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/template_01.j2\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/templates/template_01.j2\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/template_01.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2026-11-23 20:39:04,953 p=16336 u=abarca n=ansible | PLAY RECAP *****************************************************************************************
+2026-11-23 20:39:04,953 p=16336 u=abarca n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2026-11-23 20:39:04,953 p=16336 u=abarca n=ansible | localhost                  : ok=4    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-11-23 20:43:08,879 p=16530 u=abarca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2026-11-23 20:43:08,992 p=16530 u=abarca n=ansible | PLAY [all] ********************************************************************************************************************************************************************************************************************************************************************
+2026-11-23 20:43:08,998 p=16530 u=abarca n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************************************************************************
+2026-11-23 20:43:09,079 p=16530 u=abarca n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nabarca@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2026-11-23 20:43:09,882 p=16530 u=abarca n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-11-23 20:43:09,883 p=16530 u=abarca n=ansible | ok: [localhost]
+2026-11-23 20:43:09,890 p=16530 u=abarca n=ansible | TASK [include_role : 2do_parcial] *********************************************************************************************************************************************************************************************************************************************
+2026-11-23 20:43:09,912 p=16530 u=abarca n=ansible | included: 2do_parcial for localhost
+2026-11-23 20:43:09,919 p=16530 u=abarca n=ansible | TASK [2do_parcial : debug] ****************************************************************************************************************************************************************************************************************************************************
+2026-11-23 20:43:09,929 p=16530 u=abarca n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2026-11-23 20:43:09,936 p=16530 u=abarca n=ansible | TASK [2do_parcial : Crear directorios en /tmp/2do_parcial/] *******************************************************************************************************************************************************************************************************************
+2026-11-23 20:43:10,182 p=16530 u=abarca n=ansible | ok: [localhost] => (item=alumno)
+2026-11-23 20:43:10,311 p=16530 u=abarca n=ansible | ok: [localhost] => (item=equipo)
+2026-11-23 20:43:10,320 p=16530 u=abarca n=ansible | TASK [2do_parcial : Agrego archivo desde template] ****************************************************************************************************************************************************************************************************************************
+2026-11-23 20:43:10,341 p=16530 u=abarca n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2026-11-23 20:43:10,342 p=16530 u=abarca n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Could not find or access 'template_01.j2'\nSearched in:\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/templates/template_01.j2\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/template_01.j2\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/templates/template_01.j2\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/template_01.j2\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/templates/template_01.j2\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/template_01.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2026-11-23 20:43:10,343 p=16530 u=abarca n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************************************************************************
+2026-11-23 20:43:10,343 p=16530 u=abarca n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2026-11-23 20:43:10,343 p=16530 u=abarca n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-11-23 20:49:01,180 p=16728 u=abarca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was
+127.0.0.1
+
+2026-11-23 20:49:01,296 p=16728 u=abarca n=ansible | PLAY [all] *****************************************************************************************
+2026-11-23 20:49:01,301 p=16728 u=abarca n=ansible | TASK [Gathering Facts] *****************************************************************************
+2026-11-23 20:49:01,387 p=16728 u=abarca n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nabarca@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2026-11-23 20:49:02,207 p=16728 u=abarca n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at
+/usr/bin/python3.10, but future installation of another Python interpreter could change the meaning
+of that path. See https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-11-23 20:49:02,207 p=16728 u=abarca n=ansible | ok: [localhost]
+2026-11-23 20:49:02,215 p=16728 u=abarca n=ansible | TASK [include_role : 2do_parcial] ******************************************************************
+2026-11-23 20:49:02,238 p=16728 u=abarca n=ansible | included: 2do_parcial for localhost
+2026-11-23 20:49:02,245 p=16728 u=abarca n=ansible | TASK [2do_parcial : debug] *************************************************************************
+2026-11-23 20:49:02,255 p=16728 u=abarca n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2026-11-23 20:49:02,263 p=16728 u=abarca n=ansible | TASK [2do_parcial : Crear directorios en /tmp/2do_parcial/] ****************************************
+2026-11-23 20:49:02,513 p=16728 u=abarca n=ansible | ok: [localhost] => (item=alumno)
+2026-11-23 20:49:02,648 p=16728 u=abarca n=ansible | ok: [localhost] => (item=equipo)
+2026-11-23 20:49:02,656 p=16728 u=abarca n=ansible | TASK [2do_parcial : Agrego datos_alumno.txt desde template] ****************************************
+2026-11-23 20:49:02,679 p=16728 u=abarca n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2026-11-23 20:49:02,679 p=16728 u=abarca n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Could not find or access 'template_01.j2'\nSearched in:\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/templates/template_01.j2\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/template_01.j2\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/templates/template_01.j2\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/template_01.j2\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/templates/template_01.j2\n\t/home/abarca/UTN-FRA_SO_Examenes/202406/ansible/template_01.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2026-11-23 20:49:02,680 p=16728 u=abarca n=ansible | PLAY RECAP *****************************************************************************************
+2026-11-23 20:49:02,680 p=16728 u=abarca n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2026-11-23 20:49:02,680 p=16728 u=abarca n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-11-23 21:30:21,834 p=17190 u=abarca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was
+127.0.0.1
+
+2026-11-23 21:30:21,948 p=17190 u=abarca n=ansible | PLAY [all] *****************************************************************************************
+2026-11-23 21:30:21,954 p=17190 u=abarca n=ansible | TASK [Gathering Facts] *****************************************************************************
+2026-11-23 21:30:22,038 p=17190 u=abarca n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nabarca@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2026-11-23 21:30:22,865 p=17190 u=abarca n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at
+/usr/bin/python3.10, but future installation of another Python interpreter could change the meaning
+of that path. See https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-11-23 21:30:22,865 p=17190 u=abarca n=ansible | ok: [localhost]
+2026-11-23 21:30:22,874 p=17190 u=abarca n=ansible | TASK [include_role : 2do_parcial] ******************************************************************
+2026-11-23 21:30:22,898 p=17190 u=abarca n=ansible | included: 2do_parcial for localhost
+2026-11-23 21:30:22,905 p=17190 u=abarca n=ansible | TASK [2do_parcial : debug] *************************************************************************
+2026-11-23 21:30:22,916 p=17190 u=abarca n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2026-11-23 21:30:22,923 p=17190 u=abarca n=ansible | TASK [2do_parcial : Crear directorios en /tmp/2do_parcial/] ****************************************
+2026-11-23 21:30:23,176 p=17190 u=abarca n=ansible | ok: [localhost] => (item=alumno)
+2026-11-23 21:30:23,310 p=17190 u=abarca n=ansible | ok: [localhost] => (item=equipo)
+2026-11-23 21:30:23,319 p=17190 u=abarca n=ansible | TASK [2do_parcial : Agrego datos_alumno.txt desde template] ****************************************
+2026-11-23 21:30:23,765 p=17190 u=abarca n=ansible | changed: [localhost]
+2026-11-23 21:30:23,772 p=17190 u=abarca n=ansible | TASK [2do_parcial : Agrego datos_equipos desde template] *******************************************
+2026-11-23 21:30:24,043 p=17190 u=abarca n=ansible | changed: [localhost]
+2026-11-23 21:30:24,051 p=17190 u=abarca n=ansible | TASK [2do_parcial : Configurar sudoers para grupo 2PSupervisores sin password] *********************
+2026-11-23 21:30:24,310 p=17190 u=abarca n=ansible | changed: [localhost]
+2026-11-23 21:30:24,323 p=17190 u=abarca n=ansible | TASK [Otra tarea] **********************************************************************************
+2026-11-23 21:30:24,332 p=17190 u=abarca n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-11-23 21:30:24,333 p=17190 u=abarca n=ansible | PLAY RECAP *****************************************************************************************
+2026-11-23 21:30:24,333 p=17190 u=abarca n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2026-11-23 21:30:24,334 p=17190 u=abarca n=ansible | localhost                  : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-11-23 22:11:17,979 p=17600 u=abarca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was
+127.0.0.1
+
+2026-11-23 22:11:18,101 p=17600 u=abarca n=ansible | PLAY [all] *****************************************************************************************
+2026-11-23 22:11:18,107 p=17600 u=abarca n=ansible | TASK [Gathering Facts] *****************************************************************************
+2026-11-23 22:11:18,236 p=17600 u=abarca n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nabarca@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2026-11-23 22:11:19,029 p=17600 u=abarca n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at
+/usr/bin/python3.10, but future installation of another Python interpreter could change the meaning
+of that path. See https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-11-23 22:11:19,029 p=17600 u=abarca n=ansible | ok: [localhost]
+2026-11-23 22:11:19,036 p=17600 u=abarca n=ansible | TASK [include_role : 2do_parcial] ******************************************************************
+2026-11-23 22:11:19,060 p=17600 u=abarca n=ansible | included: 2do_parcial for localhost
+2026-11-23 22:11:19,067 p=17600 u=abarca n=ansible | TASK [2do_parcial : debug] *************************************************************************
+2026-11-23 22:11:19,077 p=17600 u=abarca n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2026-11-23 22:11:19,085 p=17600 u=abarca n=ansible | TASK [2do_parcial : Crear directorios en /tmp/2do_parcial/] ****************************************
+2026-11-23 22:11:19,343 p=17600 u=abarca n=ansible | changed: [localhost] => (item=alumno)
+2026-11-23 22:11:19,491 p=17600 u=abarca n=ansible | changed: [localhost] => (item=equipo)
+2026-11-23 22:11:19,500 p=17600 u=abarca n=ansible | TASK [2do_parcial : Agrego datos_alumno.txt desde template] ****************************************
+2026-11-23 22:11:19,988 p=17600 u=abarca n=ansible | changed: [localhost]
+2026-11-23 22:11:19,995 p=17600 u=abarca n=ansible | TASK [2do_parcial : Agrego datos_equipos desde template] *******************************************
+2026-11-23 22:11:20,279 p=17600 u=abarca n=ansible | changed: [localhost]
+2026-11-23 22:11:20,287 p=17600 u=abarca n=ansible | TASK [2do_parcial : Configurar sudoers para grupo 2PSupervisores sin password] *********************
+2026-11-23 22:11:20,550 p=17600 u=abarca n=ansible | ok: [localhost]
+2026-11-23 22:11:20,564 p=17600 u=abarca n=ansible | TASK [Otra tarea] **********************************************************************************
+2026-11-23 22:11:20,573 p=17600 u=abarca n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-11-23 22:11:20,574 p=17600 u=abarca n=ansible | PLAY RECAP *****************************************************************************************
+2026-11-23 22:11:20,574 p=17600 u=abarca n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2026-11-23 22:11:20,575 p=17600 u=abarca n=ansible | localhost                  : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
